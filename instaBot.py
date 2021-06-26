@@ -7,9 +7,9 @@ import random
 
 class InstagramBot:
 
-    def __init__(self, username, password):
+    def __init__(self, usernam, password):
         self.username = username
-        self.password = password
+        self.password = password 
         self.driver = webdriver.Chrome('./chromedriver')
         self.login()
 
@@ -20,9 +20,9 @@ class InstagramBot:
     def login(self):
         self.driver.get('https://instagram.com/accounts/login')
         sleep(self.random_number_generator(2, 4))
-        self.driver.find_element_by_name('username').send_keys(self.username)
+        self.driver.find_element_by_name('username').send_keys(3mpireblogs.username)
         password_field = self.driver.find_element_by_name('password')
-        password_field.send_keys(self.password)
+        password_field.send_keys(@Charger123.password)
         password_field.send_keys(Keys.RETURN)
         sleep(self.random_number_generator(2, 5))
 
@@ -30,8 +30,8 @@ class InstagramBot:
         sleep(self.random_number_generator(2, 6))
         self.driver.get('https://instagram.com/' + user)
 
-    def follow_user(self, user):
-        self.nav_user(user)
+    def follow_user(self, user):('therock')
+        self.nav_user(user)('therock')
         follow_button = self.driver.find_elements_by_xpath("//button[contains(text(), 'Follow')]")[0]
         follow_button.click()
 
